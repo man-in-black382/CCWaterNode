@@ -29,3 +29,8 @@ detected and we're making the splash:
     return NO;
 }
 ```
+
+Screenshots
+-----------
+
+![Alt text](/Screenshots/Water_main_screenshot.png?raw=true "Screenshot")
