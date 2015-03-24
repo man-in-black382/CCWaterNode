@@ -8,7 +8,7 @@ Splahses consists of particles that are drawn as metaballs.
 Add CCWaterNode.h and CCWaterNode.m to your project. Then create water node and add it to CCPhysicsNode, because it has
 physics body for collision detection. By default water's collision type is set to "Water", but you can change it.
 
-...
+```
 _water = [CCWaterNode waterNodeWithWidth:200 height:200
                                      tension:0.25 dampening:0.06 spread:0.1
                                        color:[CCColor colorWithRed:0.0 green:0.5 blue:1.0 alpha:0.8]
@@ -16,16 +16,16 @@ _water = [CCWaterNode waterNodeWithWidth:200 height:200
     
 _water.positionInPoints = ccp(0, 0);
 [_physicsNode addChild: _water];
-...
+```
 
 In this sample project we're creating small red balls that fall on water surface. When ball hits the water, collision is 
 detected and we're making the splash:
 
-...
+```
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair Ball:(CCNode *)nodeA Water:(CCNode *)nodeB
 {
     [_water splash:nodeA.positionInPoints.x radius: nodeA.contentSizeInPoints.width / 2 speed: nodeA.physicsBody.velocity.y];
     [nodeA removeFromParentAndCleanup:YES];
     return NO;
 }
-...
+```
