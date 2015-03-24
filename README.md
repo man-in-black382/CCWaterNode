@@ -18,7 +18,7 @@ _water.positionInPoints = ccp(0, 0);
 [_physicsNode addChild: _water];
 ```
 Note, that you'll need to provide a sprite frame for the drops which looks like this:
-![Alt text](/Packages/SpriteBuilder Resources.sbpack/ccbResources/resources-auto/ccbParticleFire.png?raw=true "Particle")
+![Alt text](/Screenshots/drop.png?raw=true "Particle")
 
 In this sample project we're creating small red balls that fall on water surface. When ball hits the water, collision is 
 detected and we're making the splash:
