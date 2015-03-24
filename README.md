@@ -37,6 +37,6 @@ For the sake of performance in simulator, water node is small
 ![Alt text](/Screenshots/Water_main_screenshot.png?raw=true "Screenshot")
 
 This two screenshots demonstrate how interpolation property affects the water:
-![Alt text](/Screenshots/Water_interpolated.png?raw=true "Interpolated")
+![Alt text](/Screenshots/WaterNode_interpolated.png?raw=true "Interpolated")
 
-![Alt text](/Screenshots/Water_not_interpolated.png?raw=true "Not interpolated")
+![Alt text](/Screenshots/WaterNode_not_interpolated.png?raw=true "Not interpolated")
