@@ -47,7 +47,7 @@
     }
 }
 
-// CCWaterNode has physics body which has collision type set to "Water"
+// CCWaterNode has physics body with collision type set to "Water"
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair Ball:(CCNode *)nodeA Water:(CCNode *)nodeB
 {
     [_water splash: nodeA.positionInPoints.x radius: nodeA.contentSizeInPoints.width / 2 speed: nodeA.physicsBody.velocity.y];
